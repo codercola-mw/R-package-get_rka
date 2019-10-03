@@ -1,3 +1,13 @@
+#' To get the city information from RKA API
+#'
+#' @param city The name of the city t
+#'
+#' @return the informations of the city
+#' @export
+#' @importFrom jsonlite fromJSON
+#'
+#' @examples get_rka(city = "stockholm")
+#'
 library(httr)
 library("jsonlite")
 
