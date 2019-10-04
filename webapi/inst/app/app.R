@@ -1,9 +1,8 @@
 #' Shiny
 #' 
-#' @import shiny httr jsonlite
+#' @import shiny
 
-shinyServer(
-  function(input, output){
+server <- function(input, output){
     output$distPlot <- renderPlot({
       
       get_rka(input$info, input$ages)
@@ -13,10 +12,13 @@ shinyServer(
     })
     
     
-  }
-)
+}
 
-shinyUI(fluidPage(
+#' Ui
+#' 
+#' @import shiny
+
+ui <- shiny::fluidPage(
   titlePanel(title = "Income"),
   sidebarLayout(
     sidebarPanel((""),
@@ -31,7 +33,7 @@ shinyUI(fluidPage(
       plotOutput(outputId = "distPlot")
     )
   )
-))
+)
 
 shiny::shinyApp(ui=ui, server=server)
 

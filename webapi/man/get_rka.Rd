@@ -4,7 +4,11 @@
 \alias{get_rka}
 \title{To get the city information from RKA API}
 \usage{
+<<<<<<< HEAD
 get_rka()
+=======
+get_rka(city, ageinterval)
+>>>>>>> 93c54f73c10dda70c93907942e9a751057fcbde7
 }
 \arguments{
 \item{city}{The name of the city in Sweden}

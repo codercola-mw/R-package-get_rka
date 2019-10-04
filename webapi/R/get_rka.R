@@ -7,10 +7,7 @@
 #' @return a plot of the income county consule
 #' @export
 #' @import httr jsonlite
-#' 
-library(httr)
-library(jsonlite)
-
+#'
 
 get_rka <- function(city, ageinterval){
   
@@ -54,11 +51,13 @@ get_rka <- function(city, ageinterval){
 
   return(theplot())
   
-  
 }
 
 # get_rka("Stockholm", "25-44")
+<<<<<<< HEAD
 
+=======
+>>>>>>> 93c54f73c10dda70c93907942e9a751057fcbde7
 
 
 
