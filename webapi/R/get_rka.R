@@ -6,10 +6,7 @@
 #' @return the informations of the city
 #' @export
 #' @import httr jsonlite
-#' 
-library(httr)
-library(jsonlite)
-
+#'
 
 get_rka <- function(city, ageinterval){
   
@@ -53,13 +50,9 @@ get_rka <- function(city, ageinterval){
 
   return(theplot())
   
-  
 }
 
-<<<<<<< HEAD
 # get_rka("Stockholm", "25-44")
-=======
->>>>>>> b8e775f7a48cc113aeaffb6ad0b6f8eac6c8afa4
 
 
 

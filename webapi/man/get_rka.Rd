@@ -3,6 +3,9 @@
 \name{get_rka}
 \alias{get_rka}
 \title{To get the city information from RKA API}
+\usage{
+get_rka(city, ageinterval)
+}
 \arguments{
 \item{city}{The name of the city in Sweden}
 }
