@@ -32,13 +32,21 @@ get_rka <- function(city){
   b <- salaries[,5]
   c <- salaries[,6]
   
+  
+  df2 <- data.frame(salaries[,3], salaries[,4], salaries[,5], salaries[,6])
+  colnames(df2) <- c("Years", "Median_income", "Male", "Female")
+  print(df2)
+  
   theplot <- function(){
     plot(Years,b, ylab = "Income", ylim = c(0,400000), type="l", yaxt="n", col = 4)
     lines(Years,c, col =2) 
     axis(2,cex.axis=0.9) 
     legend(2010,140000, legend=c("Men", "Women"), col=c("blue", "red"), lty=1:2, cex=0.8)
   }
+
   return(theplot())
+  
+  
 }
 
 

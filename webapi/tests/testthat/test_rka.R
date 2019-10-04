@@ -11,8 +11,8 @@ library(jsonlite)
   test_that("get_rka class is correct", {
     test_rka <- get_rka(city = "Stockholm")
     
-    expect_is(test_rka, "data.frame")
+    expect_is(test_rka, "list")
   })
   
- 
+
   

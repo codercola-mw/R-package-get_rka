@@ -11,4 +11,7 @@ Encoding: UTF-8
 RoxygenNote: 6.1.1
 Imports: httr, jsonlite
 Suggests: 
-    testthat
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
