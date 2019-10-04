@@ -1,6 +1,5 @@
+[![Build Status](https://travis-ci.org/codercola-mw/lab5.svg?branch=master)](https://travis-ci.org/codercola-mw/lab5)
 # lab5
-https://travis-ci.org/codercola-mw/lab5.svg?branch=master
-
 A package connect to the API
 
 
