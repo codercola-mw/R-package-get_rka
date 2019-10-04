@@ -49,7 +49,6 @@ get_rka <- function(city){
   
 }
 
-# get_rka("Stockholm")
 
 
 
