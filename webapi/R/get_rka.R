@@ -11,10 +11,17 @@ library(httr)
 library(jsonlite)
 
 
-#http://api.kolada.se/v2/oudata/kpi/N15033/year/2019,2009
-
-get_rka <- function(city){
-
+get_rka <- function(city, ageinterval){
+  
+  if (ageinterval == "25-44"){
+    kpicode <- "N60946"
+  }
+  else if (ageinterval == "45-59"){
+    kpicode <- "N60947"
+  }
+  
+  if (!(ageinterval == "25-44" | ageinterval == "45-59")) stop("Not correct age interval")
+  
   rka  <- "http://api.kolada.se/v1/municipality/"
   
   rka_js <- GET(paste(rka,city, sep=""))
@@ -23,7 +30,7 @@ get_rka <- function(city){
   
   df <- data.frame(parsed$values[[1]])
   
-  rka2 <- GET(paste("http://api.kolada.se/v1/data/permunicipality/N60946/",df[,1], sep=""))
+  rka2 <- GET(paste("http://api.kolada.se/v1/data/permunicipality/", kpicode, "/", df[,1], sep=""))
   parsed2 <- jsonlite::fromJSON(content(rka2,"text"), simplifyVector = FALSE)
   
   newparsed <- parsed2[-2]
@@ -49,7 +56,7 @@ get_rka <- function(city){
   
 }
 
-# get_rka("Stockholm")
+# get_rka("Stockholm", "25-44")
 
 
 
