@@ -1,21 +1,37 @@
-library(shiny)
+#' Shiny
+#' 
+#' @import shiny httr jsonlite
 
-# Define UI for miles per gallon app ----
-ui <- pageWithSidebar(
-  
-  # App title ----
-  headerPanel("Miles Per Gallon"),
-  
-  # Sidebar panel for inputs ----
-  sidebarPanel(),
-  
-  # Main panel for displaying outputs ----
-  mainPanel()
+shinyServer(
+  function(input, output){
+    output$distPlot <- renderPlot({
+      
+      get_rka(input$info, input$ages)
+      
+      
+      
+    })
+    
+    
+  }
 )
 
-# Define server logic to plot various variables against mpg ----
-server <- function(input, output) {
-  
-}
+shinyUI(fluidPage(
+  titlePanel(title = "Income"),
+  sidebarLayout(
+    sidebarPanel((""),
+                 textInput(inputId = "info", 
+                           "Enter the County Council", 
+                           "Stockholm"),
+                 selectInput("ages", "Age interval:", choices=c("25-44","45-59"))
+    ),
+    
+    
+    mainPanel(
+      plotOutput(outputId = "distPlot")
+    )
+  )
+))
 
-shinyapp(ui, server)
+shiny::shinyApp(ui=ui, server=server)
+
