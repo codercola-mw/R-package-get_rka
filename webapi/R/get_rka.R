@@ -53,12 +53,5 @@ get_rka <- function(city, ageinterval){
   
 }
 
-# get_rka("Stockholm", "25-44")
-<<<<<<< HEAD
-
-=======
->>>>>>> 93c54f73c10dda70c93907942e9a751057fcbde7
-
-
 
 
