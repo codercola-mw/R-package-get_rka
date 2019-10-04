@@ -10,6 +10,9 @@
 library(httr)
 library(jsonlite)
 
+
+#http://api.kolada.se/v2/oudata/kpi/N15033/year/2019,2009
+
 get_rka <- function(city){
 
   rka  <- "http://api.kolada.se/v1/municipality/"
