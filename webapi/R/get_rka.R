@@ -7,7 +7,7 @@
 #' @return a plot of the income county consule
 #' @export
 #' @import httr jsonlite
-#'
+#' @importFrom graphics axis legend lines plot
 
 get_rka <- function(city, ageinterval){
   

@@ -1,6 +1,4 @@
 context("test_rka.R")
-library(httr)
-library(jsonlite)
 
   test_that("get_rka rejects errounous input", {
     expect_error(get_rka("Paris", "23"))
