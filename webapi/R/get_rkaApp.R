@@ -1,6 +1,6 @@
 #' This is an example of the shiny app.
 #' 
-#' @importFrom  shiny runApp
+#' @import shiny
 #' @export
 
 get_rkaApp <- function(){
