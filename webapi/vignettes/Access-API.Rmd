@@ -26,12 +26,12 @@ The function will show a plot that indicates the income of male and female by ti
 
 ## The income in Stockholm
 ```{r, include = TRUE}
-get_rka(city = "Stockholm", "25-44")
+get_rka(city = "Stockholm", ageinterval = "25-44")
 ```
 
 ## The income in Uppsala
 ```{r, include = TRUE}
-get_rka(city = "Uppsala", "25-44")
+get_rka(city = "Uppsala", ageinterval = "25-44")
 ```
 
 # Shiny
