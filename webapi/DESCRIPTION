@@ -7,5 +7,8 @@ Author: Weng Hang Wong, Bjorn Hansen, Mahbuba Haque
 Maintainer: Mecon to <wenwo535@student.liu.se>
 Description: This package indicates the information of the cities in Sweden, e.g.ID, Title, type...
 License: GPL-3
+Encoding: UTF-8
 RoxygenNote: 6.1.1
-Imports: jsonlite
+Imports: httr, jsonlite
+Suggests: 
+    testthat

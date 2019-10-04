@@ -1,15 +1,14 @@
 #' To get the city information from RKA API
 #'
-#' @param city The name of the city t
+#' @name get_rka
 #'
+#' @param city The name of the city in Sweden
 #' @return the informations of the city
 #' @export
-#' @importFrom jsonlite fromJSON
-#'
-#' @examples get_rka(city = "stockholm")
-#'
+#' @import httr jsonlite
+#' 
 library(httr)
-library("jsonlite")
+library(jsonlite)
 
 get_rka <- function(city){
 
@@ -23,6 +22,15 @@ get_rka <- function(city){
 
   return(df)
 }
+
+#library("httr")
+#library("jsonlite")
+
+#gives a dataframe for the municipality data.
+#df_mun <- GET("http://api.kolada.se/v1/municipality")
+
+#make dataframe into list.
+#ls_mun <- content(df_mun)
 
 
 
