@@ -3,3 +3,5 @@
 export(get_rka)
 import(httr)
 import(jsonlite)
+importFrom(shiny,runApp)
+importFrom(utils,installed.packages)
