@@ -1,12 +1,14 @@
 # lab5
+https://travis-ci.org/codercola-mw/lab5.svg?branch=master
+
 A package connect to the API
 
 
 # Example use of this package
-This packages uses function `< get_rka(city = "Stockholm")  >` to find out the income gap between male and female in the particular municipality by accessing the API: http://api.kolada.se/v1/data/permunicipality/
+This packages uses function e.g.`< get_rka(city = "Stockholm")  >` to find out the income gap between male and female in the particular municipality by accessing the API: http://api.kolada.se/v1/data/permunicipality/
 
 
-The function will show a plot that indicates the income of male and female by time series.
+The function will show a plot that indicates the income of male and female by years.
 
 ## The income in Stockholm
 ```{r, include = TRUE}
