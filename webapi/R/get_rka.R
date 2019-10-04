@@ -33,16 +33,15 @@ get_rka <- function(city){
   c <- salaries[,6]
   
   theplot <- function(){
-    plot(Years,b, ylab = "Income", ylim = c(0,400000), type="l", yaxt="n", col = 4)
+    plot(Years,b, main = city, ylab = "Income", ylim = c(0,400000), type="l", yaxt="n", col = 4)
     lines(Years,c, col =2) 
-    axis(2,cex.axis=0.9) 
+    axis(2,cex.axis=0.9, at=pretty(c(0,b)), labels=format(pretty(c(0,b)), big.mark="", scientific=F)) 
     legend(2010,140000, legend=c("Men", "Women"), col=c("blue", "red"), lty=1:2, cex=0.8)
   }
   return(theplot())
 }
 
-
-get_rka("Stockholm")
+# get_rka("Stockholm")
 
 
 
