@@ -3,7 +3,8 @@
 #' @name get_rka
 #'
 #' @param city The name of the city in Sweden
-#' @return the informations of the city
+#' @param ageinterval ageinterval of people
+#' @return a plot of the income county consule
 #' @export
 #' @import httr jsonlite
 #' 
@@ -56,10 +57,8 @@ get_rka <- function(city, ageinterval){
   
 }
 
-<<<<<<< HEAD
 # get_rka("Stockholm", "25-44")
-=======
->>>>>>> b8e775f7a48cc113aeaffb6ad0b6f8eac6c8afa4
+
 
 
 
