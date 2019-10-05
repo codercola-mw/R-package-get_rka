@@ -5,10 +5,10 @@ context("test_rka.R")
     expect_error(get_rka("12345", "53"))
   })
   
-  # test_that("get_rka class is correct", {
-  #   test_rka <- get_rka(city = "Stockholm", "25-44")
-  #   expect_is(test_rka, "list")
-  # })
+  test_that("get_rka class is correct", {
+    test_rka <- get_rka(city = "Stockholm", "25-44")
+    expect_is(test_rka, "list")
+  })
   
 
   
