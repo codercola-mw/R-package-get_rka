@@ -1,0 +1,39 @@
+---
+title: "The median income between male and female in Sweden"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Access-API}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(webapi)
+```
+
+# Example use of this package
+This packages uses function `< get_rka(city = "Stockholm")  >` to find out the income gap between male and female in the particular municipality by accessing the API: http://api.kolada.se/v1/data/permunicipality/
+
+
+The function will show a plot that indicates the income of male and female by time series.
+
+## The income in Stockholm
+```{r, include = TRUE}
+get_rka(city = "Stockholm", ageinterval = "25-44")
+```
+
+## The income in Uppsala
+```{r, include = TRUE}
+get_rka(city = "Uppsala", ageinterval = "25-44")
+```
+
+# Shiny
+If you want to find the graph via Shiny, you can use
+`<shiny::runGitHub(repo = "codercola-mw/lab5/", subdir = "inst/app")>`

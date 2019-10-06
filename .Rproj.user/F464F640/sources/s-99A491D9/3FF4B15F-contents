@@ -1,0 +1,10 @@
+library("rvest")
+
+#download the top daily treding sites for the US.
+page = read_html("https://en.wikipedia.org/wiki/List_of_U.S._states_by_life_expectancy")
+
+#get the info from the table.
+my.table = html_node(page, ".wikitable")
+
+#convert table to text.
+conv_table = html_table(my.table, fill = TRUE)

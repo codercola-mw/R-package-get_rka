@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1570007965096.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "994198516",
+    "id" : "5BD8E161",
+    "lastKnownWriteTime" : 1570006667,
+    "last_content_update" : 1570006667,
+    "path" : "~/LIU/Advanced_R_Programming/lab3/lab5/webapi/R/webapi-internal.R",
+    "project_path" : "webapi/R/webapi-internal.R",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
