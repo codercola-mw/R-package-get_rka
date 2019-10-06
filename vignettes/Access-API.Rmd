@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
-library(webapi)
+library(lab5)
 ```
 
 # Example use of this package

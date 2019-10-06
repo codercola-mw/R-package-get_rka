@@ -1,4 +1,4 @@
 library(testthat)
-library(webapi)
+library(lab5)
 
-test_check("webapi")
+test_check("lab5")
