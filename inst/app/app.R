@@ -1,7 +1,7 @@
 #' Shiny
 #' 
 #' @import shiny
-library(lab5)
+library(webapi)
 server <- function(input, output){
     output$distPlot <- renderPlot({
       
