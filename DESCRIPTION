@@ -1,4 +1,4 @@
-Package: webapi
+Package: lab5
 Type: Package
 Title: To access to the RKA API
 Version: 1.0
